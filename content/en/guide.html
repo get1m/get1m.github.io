@@ -18,9 +18,37 @@
     <div class="container">
         <section id="main">
 
-<p><b>How to use 1m?</b></p>
+<p class="disclaimer">Please support 1m by reviewing it on <a href="http://go.get1m.com/play">Google Play</a>.</p>
 
-<p>This screen will be populated once we get user feedback to understand which features require explanation. As of now, just go ahead and explore the app yourself!</p>
+<h1><a id="User_Guide_0"></a>User Guide</h1>
+<ol>
+<li><a href="#quick">Quick Start</a></li>
+<li><a href="#config">Configuration</a></li>
+<li><a href="#advanced">Advanced Settings</a></li>
+<li><a href="#battery">Battery Life</a></li>
+</ol>
+<h2><a name="quick"></a>Quick Start</h2>
+<p>This section will be populated once we get user feedback to understand which features require explanation. As of now, just go ahead and explore the app yourself!</p>
+<h2><a name="config"></a>Configuration</h2>
+<p>You can adjust the New Alarm dialog window by clicking the gear icon in top right. There you can choose which coin, fiat currency, and exchange should be preselected as default whenever you add a new alarm (long tap to change defaults).</p>
+<p>You can also change ordering by tapping the star icon next to any item. Favourites are always displayed first.</p>
+<p>Finally, use the switch in order to hide any coin, currency or exchange you don’t need.</p>
+<h2><a name="advanced"></a>Advanced Settings</h2>
+<p>If you are a pro user, you can fine tune how 1m works by opening the Advanced screen. You can find it in the menu (top right).</p>
+<ul>
+<li><b>refresh-foreground</b><br/>How often (in milliseconds) to refresh prices when 1m is open and you are actively using it. This value can be quite low, because you want to see up-to-date prices. Recommended: 10000.</li><br/>
+<li><b>refresh-screen-on</b><br/>How often (in milliseconds) to refresh prices when device screen is on, but 1m is not open. This value can be reasonably low, since active device means it’s online anyway. However, it’s smart to keep it at a higher level than the one above. Recommended: 20000.</li><br/>
+<li><b>refresh-background-min</b> and <b>refresh-background-max</b><br/>The minimal and maximal frequency (in milliseconds) of how often 1m can refresh prices when screen is off and device is asleep. There are two values, because 1m will try to do its best to minimise battery impact. You want to keep those values as high as possible. Just remember that too high values may cause significant delays for your alarms. Recommended: 60000 and 120000.</li><br/>
+<li><b>notification-sound</b>, <b>notification-light</b>, <b>notification-vibrate</b><br/>Options you can use to adjust alarm notifications. Each option can be set to true or false. Recommended: true.</li>
+</ul>
+<h2><a name="battery"></a>Battery Life</h2>
+<p>Since this is a beta release of 1m, many optimisations have still yet to be done. If you notice that battery life of your device is too short, here are things you should think about:</p>
+<ul>
+<li><b>The battery impact is higher with many alarms for different pairs.</b><br/>If you set alarms for several pairs, or several exchanges, at once, your battery impact will be higher than if to set just few alarms, or if most of your alarms are for one ticker. So, try to keep the amount of active alarms on a reasonable low level. Note that inactive alarms have no impact on battery.</li><br/>
+<li><b>You can adjust the frequency of price refresh requests.</b><br/>Your configuration can have dramatic impact on battery life. Please refer to <a href="#advanced">Advanced Settings</a> section for details.</li><br/>
+<li><b>Use the Active switch to turn everthing off in urgent situations.</b><br/>If you’re on the go and running short on your battery, just flip the Active switch in bottom left of the Home screen. When Inactive, 1m has zero effect on battery.</li>
+</ul>
+
 
 	</section>
     </div>
