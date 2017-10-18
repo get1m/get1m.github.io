@@ -351,3 +351,27 @@ body {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
 }
+
+
+<!-- Note: This is not in less!! -->
+
+#fullscreen {
+  float: right;
+  position: relative;
+  z-index: 1000;
+  top: 630px;
+}
+
+#fullscreen i {
+  display: block;
+  padding: 25px 15px 5px 25px;
+  color: white;
+  filter: alpha(opacity=30);
+  opacity: .3;
+}
+
+#fullscreen i:hover {
+  cursor: pointer;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
